@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMC.Taxes.TaxJar", "IMC.Tax
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMC.Taxes.TaxJar.Tests", "IMC.Taxes.TaxJar.Tests\IMC.Taxes.TaxJar.Tests.csproj", "{6CB727E6-910F-4701-B208-D58DDC5AEACE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMC.Taxes.Services", "IMC.Taxes.Services\IMC.Taxes.Services.csproj", "{E17E4AAB-D3B6-4592-948B-FD3D6C857E77}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{6CB727E6-910F-4701-B208-D58DDC5AEACE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6CB727E6-910F-4701-B208-D58DDC5AEACE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6CB727E6-910F-4701-B208-D58DDC5AEACE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E17E4AAB-D3B6-4592-948B-FD3D6C857E77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E17E4AAB-D3B6-4592-948B-FD3D6C857E77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E17E4AAB-D3B6-4592-948B-FD3D6C857E77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E17E4AAB-D3B6-4592-948B-FD3D6C857E77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
