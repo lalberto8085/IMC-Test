@@ -30,5 +30,19 @@ namespace IMC.Taxes.Services.Tests
 
             Assert.IsTrue(mockMethodCalled);
         }
+
+        [Test]
+        public void CalculateTaxesForOrderCallsTaxCalculator()
+        {
+            var mockMethodCalled = false;
+            var mock = new Mock<ITaxCalculator>();
+            mock.Setup(calculator => calculator.CalculateTaxesForOrder(It.IsAny<OrderInfo>())).Callback(() => mockMethodCalled = true);
+
+            var service = new TaxService(mock.Object);
+            var order = new OrderInfo();
+            service.CalculateTaxesForOrder(order);
+
+            Assert.IsTrue(mockMethodCalled);
+        }
     }
 }

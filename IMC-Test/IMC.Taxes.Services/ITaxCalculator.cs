@@ -8,5 +8,7 @@ namespace IMC.Taxes.Services
     public interface ITaxCalculator
     {
         TaxRatesInfo TaxRatesForLocation(TaxLocationInfo locationInfo);
+
+        OrderTaxInfo CalculateTaxesForOrder(OrderInfo orderInfo);
     }
 }

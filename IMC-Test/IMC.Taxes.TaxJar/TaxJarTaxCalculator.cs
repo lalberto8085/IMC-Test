@@ -18,6 +18,11 @@ namespace IMC.Taxes.TaxJar
             this.clientFactory = clientFactory;
         }
 
+        public OrderTaxInfo CalculateTaxesForOrder(OrderInfo orderInfo)
+        {
+            throw new NotImplementedException();
+        }
+
         public TaxRatesInfo TaxRatesForLocation(TaxLocationInfo locationInfo)
         {
             if (string.IsNullOrWhiteSpace(locationInfo.ZipCode))

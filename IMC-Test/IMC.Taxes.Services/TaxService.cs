@@ -18,5 +18,10 @@ namespace IMC.Taxes.Services
         {
             return taxCalculator.TaxRatesForLocation(locationInfo);
         }
+
+        public OrderTaxInfo CalculateTaxesForOrder(OrderInfo orderInfo)
+        {
+            return taxCalculator.CalculateTaxesForOrder(orderInfo);
+        }
     }
 }
