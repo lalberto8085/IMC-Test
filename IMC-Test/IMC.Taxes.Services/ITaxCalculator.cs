@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IMC.Taxes.Services.Models;
+using System;
 using System.Collections.Generic;
 using System.Text;
 

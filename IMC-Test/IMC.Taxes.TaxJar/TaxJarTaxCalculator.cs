@@ -1,4 +1,6 @@
 ﻿using IMC.Taxes.Services;
+using IMC.Taxes.Services.Models;
+using IMC.Taxes.TaxJar.Models;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
