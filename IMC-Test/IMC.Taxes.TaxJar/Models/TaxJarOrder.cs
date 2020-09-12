@@ -57,6 +57,8 @@ namespace IMC.Taxes.TaxJar.Models
         public IEnumerable<string> ValidationErrors()
         {
             var errors = new List<string>();
+            if (string.IsNullOrWhiteSpace(to_country))
+                errors.Add("Shipping country information required");
             if (!amount.HasValue && line_items.Count == 0)
                 errors.Add("Either Amount or LineItems are required to calculate taxes");
             if (to_country == "US" && string.IsNullOrWhiteSpace(to_zip))
