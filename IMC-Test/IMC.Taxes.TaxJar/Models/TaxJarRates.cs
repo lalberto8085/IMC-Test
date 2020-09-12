@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace IMC.Taxes.TaxJar
+namespace IMC.Taxes.TaxJar.Models
 {
     public class TaxJarRates
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace IMC.Taxes.Services
+namespace IMC.Taxes.Services.Models
 {
     public class TaxLocationInfo
     {
