@@ -67,6 +67,8 @@ namespace IMC.Taxes.TaxJar.Models
                 errors.Add("State is required when shipping to US or CA");
             if (nexus_addresses.Count == 0 && (string.IsNullOrWhiteSpace(from_country)))
                 errors.Add("Either NexusAddress or From address information is required for tax calculation");
+            if (nexus_addresses.Any(na => string.IsNullOrWhiteSpace(na.country) || string.IsNullOrWhiteSpace(na.state)))
+                errors.Add("Nexus address requires Country and State code");
             return errors;
         }
 

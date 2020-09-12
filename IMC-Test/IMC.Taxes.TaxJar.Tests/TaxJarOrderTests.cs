@@ -101,5 +101,23 @@ namespace IMC.Taxes.TaxJar.Tests
             var errors = validOrder.ValidationErrors().ToList();
             Assert.Contains("Either NexusAddress or From address information is required for tax calculation", errors);
         }
+
+        [Test]
+        public void NexusAddressRequiresCountryCode()
+        {
+            var address = validOrder.nexus_addresses[0];
+            address.country = null;
+            var errors = validOrder.ValidationErrors().ToList();
+            Assert.Contains("Nexus address requires Country and State code", errors);
+        }
+
+        [Test]
+        public void NexusAddressRequiresStateCode()
+        {
+            var address = validOrder.nexus_addresses[0];
+            address.state = null;
+            var errors = validOrder.ValidationErrors().ToList();
+            Assert.Contains("Nexus address requires Country and State code", errors);
+        }
     }
 }
