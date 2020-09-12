@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMC.Taxes.Services", "IMC.T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMC.Taxes.Services.Tests", "IMC.Taxes.Services.Tests\IMC.Taxes.Services.Tests.csproj", "{E52C7047-96F0-4C9F-B0F2-76E7A7F703C8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{16D2BC2F-957B-4092-AC4B-3F7081867666}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,6 +38,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6CB727E6-910F-4701-B208-D58DDC5AEACE} = {16D2BC2F-957B-4092-AC4B-3F7081867666}
+		{E52C7047-96F0-4C9F-B0F2-76E7A7F703C8} = {16D2BC2F-957B-4092-AC4B-3F7081867666}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4418E068-DA78-4B28-9C0F-3ED8A1EB2AA2}
