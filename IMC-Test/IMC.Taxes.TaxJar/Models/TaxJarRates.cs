@@ -27,35 +27,6 @@ namespace IMC.Taxes.TaxJar.Models
         public decimal? standard_rate { get; set; }
         public decimal? super_reduced_rate { get; set; }
 
-        public TaxJarRates()
-        {
-        }
-
-        public TaxJarRates(TaxRatesInfo info)
-        {
-            if (info == null)
-                throw new ArgumentNullException(nameof(info));
-
-            city = info.City;
-            city_rate = info.CityRate;
-            combined_rate = info.CombinedRate;
-            combined_district_rate = info.CombinedDistrictRate;
-            country = info.Country;
-            country_rate = info.CountryRate;
-            county = info.County;
-            county_rate = info.CountyRate;
-            distance_sale_threshold = info.DistanceSaleThreshold;
-            freight_taxable = info.IsFreightTaxable;
-            name = info.Name;
-            parking_rate = info.ParkingRate;
-            reduced_rate = info.ReducedRate;
-            standard_rate = info.StandardRate;
-            state = info.State;
-            state_rate = info.StateRate;
-            super_reduced_rate = info.SuperReducedRate;
-            zip = info.ZipCode;
-        }
-
         public TaxRatesInfo ToTaxRatesInfo()
         {
             return new TaxRatesInfo

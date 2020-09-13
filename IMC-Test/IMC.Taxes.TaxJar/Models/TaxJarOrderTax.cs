@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IMC.Taxes.Services.Models;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -21,5 +22,21 @@ namespace IMC.Taxes.TaxJar.Models
         public bool freight_taxable { get; set; }
         public string tax_source { get; set; }
         public string exemption_type { get; set; }
+
+        public OrderTaxInfo ToOrderTaxInfo()
+        {
+            return new OrderTaxInfo
+            {
+                AmountToCollect = amount_to_collect,
+                ExemptionType = Utils.TranslateToExemptionTypeOrNull(exemption_type),
+                FreightTaxable = freight_taxable,
+                HasNexus = has_nexus,
+                OrderTotalAmount = order_total_amount,
+                Rate = rate,
+                Shipping = shipping,
+                TaxableAmount = taxable_amount,
+                TaxSource = tax_source
+            };
+        }
     }
 }
