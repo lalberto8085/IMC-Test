@@ -48,10 +48,10 @@ namespace IMC.Taxes.TaxJar.Models
             amount = order.Amount;
             shipping = order.Shipping;
             customer_id = order.CustomerId;
-            exemption_type = TranslateExemptionType(order.ExemptionType.Value);
+            exemption_type = TranslateExemptionType(order.ExemptionType);
 
-            nexus_addresses.AddRange(order.NexusAddresses.Select(a => new TaxJarNexusAddress(a)));
-            line_items.AddRange(order.LineItems.Select(item => new TaxJarLineItem(item)));
+            nexus_addresses.AddRange(order.NexusAddresses?.Select(a => new TaxJarNexusAddress(a)) ?? new TaxJarNexusAddress[0]);
+            line_items.AddRange(order.LineItems?.Select(item => new TaxJarLineItem(item)) ?? new TaxJarLineItem[0]);
         }
 
         public IEnumerable<string> ValidationErrors()
