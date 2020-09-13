@@ -14,6 +14,6 @@ namespace IMC.Taxes.Services.Models
         public bool HasNexus { get; set; }
         public bool FreightTaxable { get; set; }
         public string TaxSource { get; set; }
-        public string ExemptionType { get; set; }
+        public ExemptionType? ExemptionType { get; set; }
     }
 }

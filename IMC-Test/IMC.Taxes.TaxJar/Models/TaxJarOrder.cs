@@ -76,21 +76,7 @@ namespace IMC.Taxes.TaxJar.Models
         {
             if (!exemptionType.HasValue)
                 return null;
-            switch (exemptionType.Value)
-            {
-                case ExemptionType.Wholesale:
-                    return "wholesale";
-                case ExemptionType.Government:
-                    return "government";
-                case ExemptionType.Marketplace:
-                    return "marketplace";
-                case ExemptionType.Other:
-                    return "other";
-                case ExemptionType.NonExempt:
-                    return "non_exempt";
-                default:
-                    throw new ArgumentOutOfRangeException(nameof(exemptionType));
-            }
+            return Utils.TranslateTaxExemptionType(exemptionType.Value);
         }
     }
 }
