@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30104.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMC.Taxes.TaxJar", "IMC.Taxes.TaxJar\IMC.Taxes.TaxJar.csproj", "{2025F2BC-E5DD-40DD-B252-E586BA423354}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IMC.Taxes.TaxJar", "IMC.Taxes.TaxJar\IMC.Taxes.TaxJar.csproj", "{2025F2BC-E5DD-40DD-B252-E586BA423354}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMC.Taxes.TaxJar.Tests", "IMC.Taxes.TaxJar.Tests\IMC.Taxes.TaxJar.Tests.csproj", "{6CB727E6-910F-4701-B208-D58DDC5AEACE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IMC.Taxes.TaxJar.Tests", "IMC.Taxes.TaxJar.Tests\IMC.Taxes.TaxJar.Tests.csproj", "{6CB727E6-910F-4701-B208-D58DDC5AEACE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMC.Taxes.Services", "IMC.Taxes.Services\IMC.Taxes.Services.csproj", "{E17E4AAB-D3B6-4592-948B-FD3D6C857E77}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IMC.Taxes.Services", "IMC.Taxes.Services\IMC.Taxes.Services.csproj", "{E17E4AAB-D3B6-4592-948B-FD3D6C857E77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMC.Taxes.Services.Tests", "IMC.Taxes.Services.Tests\IMC.Taxes.Services.Tests.csproj", "{E52C7047-96F0-4C9F-B0F2-76E7A7F703C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IMC.Taxes.Services.Tests", "IMC.Taxes.Services.Tests\IMC.Taxes.Services.Tests.csproj", "{E52C7047-96F0-4C9F-B0F2-76E7A7F703C8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{16D2BC2F-957B-4092-AC4B-3F7081867666}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestingConsole", "TestingConsole\TestingConsole.csproj", "{02D5F848-E989-4C97-9F41-C8EF93EEE293}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{E52C7047-96F0-4C9F-B0F2-76E7A7F703C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E52C7047-96F0-4C9F-B0F2-76E7A7F703C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E52C7047-96F0-4C9F-B0F2-76E7A7F703C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02D5F848-E989-4C97-9F41-C8EF93EEE293}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02D5F848-E989-4C97-9F41-C8EF93EEE293}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02D5F848-E989-4C97-9F41-C8EF93EEE293}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02D5F848-E989-4C97-9F41-C8EF93EEE293}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
